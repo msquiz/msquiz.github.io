@@ -2,11 +2,13 @@ Hello!
 
 Welcome to Quiz </br> </br>
 
-<script>
-  
+<p><a id="quizLink" href="http://www.microsoft.com">Quiz Link</a></p>
+
+<script>  
 var rv = Math.floor(Math.random() * 5)
 function myFunction() {
-  document.getElementById("qlink").textContent  = "aaa" ;
+  document.getElementById("quizLink").textContent  = "https://www.bing.com/search?q=" + rv;
+  document.getElementById("quizLink").innerHTML = "You can click on the this link to open the quiz";
 }
 </script>
 
