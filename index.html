@@ -7,11 +7,9 @@ Welcome to Quiz </br> </br>
 <script>  
 var rv = Math.floor(Math.random() * 5)
 function myFunction() {
-  document.getElementById("quizLink").textContent  = "https://www.bing.com/search?q=" + rv;
+  document.getElementById("quizLink").href  = "https://www.bing.com/search?q=" + rv;
   document.getElementById("quizLink").innerHTML = "You can click on the this link to open the quiz";
 }
 </script>
-
-<label id="qlink">Open Quiz</label> </br></br>
 
 <button type="button" onclick="myFunction()">Open Quiz</button>
