@@ -1,6 +1,6 @@
 Hello!
 
-Welcome to Quiz </br> </br>
+Welcome to Quiz </br>
 
 <p><a id="quizLink" href="http://www.microsoft.com">Quiz Link</a></p>
 
@@ -9,7 +9,8 @@ var rv = Math.floor(Math.random() * 5)
 function myFunction() {
   document.getElementById("quizLink").href  = "https://www.bing.com/search?q=" + rv;
   document.getElementById("quizLink").innerHTML = "You can click on the this link to open the quiz";
+  document.getElementById("btnQz").disabled = true;
 }
 </script>
 
-<button type="button" onclick="myFunction()">Open Quiz</button>
+<button id="btnQz" type="button" onclick="myFunction()">Open Quiz</button>
